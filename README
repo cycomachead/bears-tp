@@ -1,5 +1,5 @@
-EE 122 Fall 2012
-Project 1
+EE 122 Fall 2013
+Project 2
 
 In this folder you'll find the sample receiver, code for computing and
 validating checksums, as well as example sender code.
@@ -121,4 +121,4 @@ Direct any problems or questions you have to your recitation section GSI. If
 you find problems or bugs in the provided code, you may also file an issue
 ticket on this project's Github page:
 
-    https://github.com/shaddi/bears-tp
+    https://github.com/andrewor14/bears-tp

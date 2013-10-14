@@ -62,6 +62,8 @@ class Receiver():
         }
 
     def start(self):
+	print "===== Welcome to Bears-TP Receiver v1.0! ====="
+	print "* Listening on port %d..." % self.port
         while True:
             try:
                 message, address = self.receive()
@@ -128,14 +130,7 @@ class Receiver():
 
     # handle end packets
     def _handle_end(self, seqno, data, address):
-        if address in self.connections:
-            conn = self.connections[address]
-            ackno, res_data = conn.ack(seqno,data)
-            for l in res_data:
-                if self.debug:
-                    print l
-                conn.record(l)
-            self._send_ack(ackno, address)
+        self._handle_data(seqno, data, address)
 
     # I'll do the ack-ing here, buddy
     def _handle_ack(self, seqno, data, address):

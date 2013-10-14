@@ -68,7 +68,6 @@ if __name__ == "__main__":
     dest = "localhost"
     filename = None
 
-
     for o,a in opts:
         if o in ("-p", "--port="):
             port = int(a)

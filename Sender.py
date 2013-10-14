@@ -8,9 +8,25 @@ import BasicSender
 This is a skeleton sender class. Create a fantastic transport protocol here.
 '''
 class Sender(BasicSender.BasicSender):
+    def __init__(self, dest, port, filename, debug=False):
+        super(Sender, self).__init__(dest, port, filename, debug)
+
     # Main sending loop.
     def start(self):
         raise NotImplementedError
+
+    def handle_timeout(self):
+        pass
+
+    def handle_new_ack(self, ack):
+        pass
+
+    def handle_dup_ack(self, ack):
+        pass
+
+    def log(self, msg):
+        if self.debug:
+            print msg
 
 '''
 This will be run if you run this script from the command line. You should not

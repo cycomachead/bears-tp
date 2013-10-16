@@ -18,7 +18,7 @@ Receiver.py is the sample receiver. The version of Receiver.py here is largely
 identical to what we will use for grading your projects (what we actually use
 may include additional instrumentation to assist in grading, but should not vary
 significantly in functionality). Feel free to modify it, but keep in mind that
-we will be testing (your sender) against our own version of the reciever, not 
+we will be testing (your sender) against our own version of the rece1ver, not 
 yours (except, of course, if you're implementing an extra credit option that
 requires extending the receiver we provided). If bugs are found or changes made
 to the sample receiver, we'll notify you and post an updated copy.
